@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39613277-A0E9-4556-9A77-DCBCB5F63CAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reception</RootNamespace>
+    <AssemblyName>Reception</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgeFrm.Designer.cs">
+      <DependentUpon>AgeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlackFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlackFrm.Designer.cs">
+      <DependentUpon>BlackFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlackSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlackSrch.Designer.cs">
+      <DependentUpon>BlackSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashFrm.Designer.cs">
+      <DependentUpon>CashFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashReport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashReport2.Designer.cs">
+      <DependentUpon>CashReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorrectioncashFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorrectioncashFRM.Designer.cs">
+      <DependentUpon>CorrectioncashFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryFrm.Designer.cs">
+      <DependentUpon>CountryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportCash2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCash2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportGuestCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportGuestCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportReciept.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportReciept.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportUser.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportUser.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DiscountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscountFrm.Designer.cs">
+      <DependentUpon>DiscountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisFrmSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisFrmSrch.Designer.cs">
+      <DependentUpon>DisFrmSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMagencysearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMagencysearch.Designer.cs">
+      <DependentUpon>FRMagencysearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCashsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCashsearch.Designer.cs">
+      <DependentUpon>FRMCashsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMcountIns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMcountIns.Designer.cs">
+      <DependentUpon>FRMcountIns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReciept.Designer.cs">
+      <DependentUpon>FrmReciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestCard.Designer.cs">
+      <DependentUpon>GuestCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestCardReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestCardReport.Designer.cs">
+      <DependentUpon>GuestCardReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestcardSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestcardSrch.Designer.cs">
+      <DependentUpon>GuestcardSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFRM.Designer.cs">
+      <DependentUpon>MainFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricefrm.Designer.cs">
+      <DependentUpon>Pricefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PricesFrmSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PricesFrmSrch.Designer.cs">
+      <DependentUpon>PricesFrmSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecieptReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecieptReport.Designer.cs">
+      <DependentUpon>RecieptReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RmConfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RmConfrm.Designer.cs">
+      <DependentUpon>RmConfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rmlistfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rmlistfrm.Designer.cs">
+      <DependentUpon>Rmlistfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomSrchFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomSrchFrm.Designer.cs">
+      <DependentUpon>RoomSrchFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFRM.Designer.cs">
+      <DependentUpon>UserFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserReport.Designer.cs">
+      <DependentUpon>UserReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersSearchFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersSearchFRM.Designer.cs">
+      <DependentUpon>UsersSearchFRM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgeFrm.resx">
+      <DependentUpon>AgeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlackFrm.resx">
+      <DependentUpon>BlackFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlackSrch.resx">
+      <DependentUpon>BlackSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashFrm.resx">
+      <DependentUpon>CashFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashReport2.resx">
+      <DependentUpon>CashReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorrectioncashFRM.resx">
+      <DependentUpon>CorrectioncashFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryFrm.resx">
+      <DependentUpon>CountryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCash2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCash2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportGuestCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportGuestCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportReciept.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportReciept.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportUser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportUser.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscountFrm.resx">
+      <DependentUpon>DiscountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisFrmSrch.resx">
+      <DependentUpon>DisFrmSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMagencysearch.resx">
+      <DependentUpon>FRMagencysearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCashsearch.resx">
+      <DependentUpon>FRMCashsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMcountIns.resx">
+      <DependentUpon>FRMcountIns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReciept.resx">
+      <DependentUpon>FrmReciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestCard.resx">
+      <DependentUpon>GuestCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestCardReport.resx">
+      <DependentUpon>GuestCardReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestcardSrch.resx">
+      <DependentUpon>GuestcardSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFRM.resx">
+      <DependentUpon>MainFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricefrm.resx">
+      <DependentUpon>Pricefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PricesFrmSrch.resx">
+      <DependentUpon>PricesFrmSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecieptReport.resx">
+      <DependentUpon>RecieptReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RmConfrm.resx">
+      <DependentUpon>RmConfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rmlistfrm.resx">
+      <DependentUpon>Rmlistfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomSrchFrm.resx">
+      <DependentUpon>RoomSrchFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFRM.resx">
+      <DependentUpon>UserFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReport.resx">
+      <DependentUpon>UserReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersSearchFRM.resx">
+      <DependentUpon>UsersSearchFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_black_first.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_black_last.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculater2 Black and Gold.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Programming.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Enter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculater2 Black and Gold1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
